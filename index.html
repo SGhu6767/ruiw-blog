@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10131d">
+  <meta name="description" content="Ruiw 的个人空间，记录代码、生活与灵感。">
+  <title>Ruiw's Space</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%2310131d'/%3E%3Ctext x='50' y='67' font-size='54' text-anchor='middle' fill='%23a9bcff' font-family='Arial'%3ER%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <header class="topbar wrap">
+    <a class="brand" href="#home" aria-label="Ruiw 首页"><span class="brand-mark">R</span> RUIW<span class="brand-dot">.</span></a>
+    <nav aria-label="主导航">
+      <a href="#home">首页</a>
+      <a href="#posts">文章</a>
+      <a href="#about">关于</a>
+    </nav>
+    <a class="github-link" href="https://github.com/" target="_blank" rel="noreferrer">GitHub ↗</a>
+  </header>
+
+  <main>
+    <section class="hero wrap" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span> PERSONAL WEBSITE · 2026</div>
+        <h1>Hello,<br>I'm <span>Ruiw.</span></h1>
+        <p class="hero-subtitle">A little world of my own.</p>
+        <p class="hero-description">这里是我的小小互联网角落。记录代码、生活、想法，以及那些值得保存的瞬间。</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#posts">浏览文章 <span>↓</span></a>
+          <a class="button button-quiet" href="#about">认识我</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="抽象水晶城堡装饰">
+        <div class="orbit orbit-a"></div>
+        <div class="orbit orbit-b"></div>
+        <div class="crystal crystal-main"></div>
+        <div class="crystal crystal-small"></div>
+        <div class="star star-a">✦</div><div class="star star-b">✧</div>
+        <div class="art-caption">THINK · CREATE · REPEAT</div>
+      </div>
+    </section>
+
+    <section class="quick-links wrap" aria-label="站点分类">
+      <a class="quick-card" href="#posts">
+        <span class="quick-icon">⌘</span><span><strong>Coding</strong><small>代码与项目</small></span><span class="arrow">↗</span>
+      </a>
+      <a class="quick-card" href="#posts">
+        <span class="quick-icon">✧</span><span><strong>Life</strong><small>日常与记录</small></span><span class="arrow">↗</span>
+      </a>
+      <a class="quick-card" href="#about">
+        <span class="quick-icon">◇</span><span><strong>Thoughts</strong><small>想法与灵感</small></span><span class="arrow">↗</span>
+      </a>
+    </section>
+
+    <section class="posts-section wrap" id="posts">
+      <div class="section-heading">
+        <div><div class="eyebrow">THE JOURNAL</div><h2>最近的记录<span>.</span></h2></div>
+        <span class="post-count" id="post-count">03 POSTS</span>
+      </div>
+      <div class="filter-row" aria-label="文章筛选">
+        <button class="filter active" data-filter="全部">全部</button>
+        <button class="filter" data-filter="随笔">随笔</button>
+        <button class="filter" data-filter="技术">技术</button>
+        <button class="filter" data-filter="生活">生活</button>
+      </div>
+      <div class="post-list" id="post-list">
+        <article class="post-card" data-category="随笔">
+          <div class="post-meta"><span>2026.11.26</span><span class="tag">随笔</span></div>
+          <h3>欢迎来到我的小小空间</h3>
+          <p>新的个人博客上线啦。以后就在这里慢慢记录我的生活、项目和一些突然出现的想法。</p>
+          <span class="read-more">FIRST POST <span>↗</span></span>
+        </article>
+        <article class="post-card" data-category="技术">
+          <div class="post-meta"><span>2026.11.20</span><span class="tag">技术</span></div>
+          <h3>正在搭建的数字世界</h3>
+          <p>从 Termux 到 Cloudflare Pages，从一个小脚本到一个网站。折腾的过程本身也很有意思。</p>
+          <span class="read-more">PROJECT NOTES <span>↗</span></span>
+        </article>
+        <article class="post-card" data-category="生活">
+          <div class="post-meta"><span>2026.11.15</span><span class="tag">生活</span></div>
+          <h3>一些值得收藏的瞬间</h3>
+          <p>生活里有很多很小的片段。把它们写下来，或许以后再看时，会发现它们一直闪着光。</p>
+          <span class="read-more">LIFE LOG <span>↗</span></span>
+        </article>
+      </div>
+      <p class="empty-state" id="empty-state" hidden>这个分类暂时还没有文章。</p>
+    </section>
+
+    <section class="about-section wrap" id="about">
+      <div class="about-panel">
+        <div class="about-symbol">R<span>.</span></div>
+        <div>
+          <div class="eyebrow">A LITTLE ABOUT ME</div>
+          <h2>Who am I<span>?</span></h2>
+          <p>我是 Ruiw，一个喜欢探索互联网、写代码、做小项目的人。这里不追求完美，只想留下一些真实的记录。</p>
+          <div class="about-chips"><span>Curious mind</span><span>Keep creating</span><span>Stay different</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer wrap">
+    <a class="brand" href="#home">RUIW<span class="brand-dot">.</span></a>
+    <span>Made with curiosity. © <span id="year">2026</span> Ruiw.</span>
+    <a href="#home">回到顶部 ↑</a>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
